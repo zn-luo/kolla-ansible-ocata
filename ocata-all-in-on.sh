@@ -216,10 +216,10 @@ main(){
 
     kolla-ansible deploy -i all-in-one
     
-    # kolla-ansible post-deploy
-    # source /etc/kolla/admin-openrc.sh
-    # cd /usr/share/kolla-ansible
-    # ./init-runonce
+    kolla-ansible post-deploy
+    source /etc/kolla/admin-openrc.sh
+    cd /usr/share/kolla-ansible
+    ./init-runonce
 }
 
 main
